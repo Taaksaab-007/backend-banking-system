@@ -19,6 +19,12 @@ const bcrypt=require("bcryptjs")
         required:[true,"Password is required for creating account"],
         minlength:[6,"Password should be contain more than 6"],
         select:false
+    },
+    systemUser:{
+        type:Boolean,
+        default:false,
+        immutable:true,
+        select:false
     }
 },
 {
